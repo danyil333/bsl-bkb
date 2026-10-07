@@ -10,42 +10,45 @@
 <style>
 
 body {
-    background-color: blueviolet;
+    background-color:#34cfeb ;
     text-align:center;
     font-family:'Gill Sans';
 }
-
-
-
 
 
 </style>
 
 </head>
 
-
 <body>
 
 
 <div id="test">
 
-<h1>TEST YOUR MIGHT</h1>
+<h1>НАЖМИ </h1>
 
-<button onclick="start()">CLICK</button>
+
+   
+<button  width:350px;
+    height:120px;
+    font-size:42px;
+    font-weight:bold;
+    cursor:pointer;
+     onclick="start()">CLICK</button>
 
 </div>
-
 
 
 <img id="gif" src="hehehe777.gif"
 style="
 display:none;
-width:80%;
-max-width:600px;
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+object-fit:cover;
+z-index:9999;
 ">
 
 
@@ -55,7 +58,6 @@ transform:translate(-50%,-50%);
 <source src="hehehe (audio-extractor.net).mp3" type="audio/mpeg">
 
 </audio>
-
 
 
 <script>
@@ -75,15 +77,10 @@ document.getElementById("gif").style.display="block";
 let sound=document.getElementById("sound");
 sound.play();
 
-
-
-},5000);
-
+},666);
 
 }
-
 </script>
-
 
 </body>
 
